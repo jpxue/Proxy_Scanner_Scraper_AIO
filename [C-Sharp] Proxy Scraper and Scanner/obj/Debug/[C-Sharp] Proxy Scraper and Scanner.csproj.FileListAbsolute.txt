@@ -1,0 +1,17 @@
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\[C#] Proxy Toolkit.exe.config
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\[C#] Proxy Toolkit.exe
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\[C#] Proxy Toolkit.pdb
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\HtmlAgilityPack.dll
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\xNet.dll
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\HtmlAgilityPack.xml
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\xNet.pdb
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\bin\Debug\xNet.xml
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\CS_Proxy.Form1.resources
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\CS_Proxy.Form2.resources
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\CS_Proxy.Properties.Resources.resources
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\[C-Sharp] Proxy Scraper and Scanner.csproj.GenerateResource.Cache
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\[C-Sharp] Proxy Scraper and Scanner.csproj.CoreCompileInputs.cache
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\[C#] Proxy Toolkit.exe
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\[C#] Proxy Toolkit.pdb
+C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Debug\[C-Sharp] Proxy Scraper and Scanner.csprojResolveAssemblyReference.cache
