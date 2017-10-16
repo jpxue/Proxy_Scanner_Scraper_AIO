@@ -14,19 +14,3 @@ C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scr
 C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C-Sharp] Proxy Scraper and Scanner.csproj.CoreCompileInputs.cache
 C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C#] Proxy Toolkit.exe
 C:\Users\JP\source\repos\[C-Sharp] Proxy Scraper and Scanner\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C#] Proxy Toolkit.pdb
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\[C#] Proxy Toolkit.exe.config
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\[C#] Proxy Toolkit.exe
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\[C#] Proxy Toolkit.pdb
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\HtmlAgilityPack.dll
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\HtmlAgilityPack.pdb
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\HtmlAgilityPack.xml
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\xNet.pdb
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\bin\Release\xNet.xml
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C-Sharp] Proxy Scraper and Scanner.csprojResolveAssemblyReference.cache
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\CS_Proxy.Form1.resources
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\CS_Proxy.Form2.resources
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\CS_Proxy.Properties.Resources.resources
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C-Sharp] Proxy Scraper and Scanner.csproj.GenerateResource.Cache
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C-Sharp] Proxy Scraper and Scanner.csproj.CoreCompileInputs.cache
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C#] Proxy Toolkit.exe
-C:\Users\JP\Documents\GitHub\Proxy_Toolkit_Scan-Scrape\[C-Sharp] Proxy Scraper and Scanner\obj\Release\[C#] Proxy Toolkit.pdb
