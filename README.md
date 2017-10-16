@@ -7,4 +7,5 @@ A program that:
 
 
 # How it Works
+CLICK TO ENLARGE
 ![alt tag](https://raw.githubusercontent.com/jpxue/Proxy_Toolkit_Scan-Scrape/master/how_it_works.png)
