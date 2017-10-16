@@ -17,12 +17,11 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using System.Net;
 
 using HtmlAgilityPack;
 
-namespace CS_Proxy
+namespace CS_Proxy.Classes.Singlethreaded
 {
     //Not written for multi-threading - not worth it
     class Harvester

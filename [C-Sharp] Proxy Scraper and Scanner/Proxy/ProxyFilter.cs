@@ -22,7 +22,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace CS_Proxy
+namespace CS_Proxy.Proxy
 {
     internal class IPRange
     {

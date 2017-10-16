@@ -21,6 +21,9 @@ using System.Threading;
 using System.Net;
 using System.Text.RegularExpressions;
 
+using CS_Proxy.Lists;
+using CS_Proxy.Proxy;
+
 namespace CS_Proxy
 {
     [System.ComponentModel.DesignerCategory("")] //annoying shit
@@ -35,7 +38,10 @@ namespace CS_Proxy
             return w;
         }
     }
+}
 
+namespace CS_Proxy.Classes.Multithreaded
+{
     public class Scraper
     {
         public static int URLScraped { get; private set; } //info

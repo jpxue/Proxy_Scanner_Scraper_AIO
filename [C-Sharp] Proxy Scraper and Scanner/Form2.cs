@@ -17,7 +17,9 @@
 
 using System;
 using System.Windows.Forms;
-using xNet;
+
+using CS_Proxy.Lists;
+using CS_Proxy.Classes.Multithreaded;
 
 namespace CS_Proxy
 {

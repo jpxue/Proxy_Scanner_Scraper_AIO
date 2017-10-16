@@ -20,9 +20,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Text;
-using xNet;
 
-namespace CS_Proxy
+using xNet;
+using CS_Proxy.Proxy;
+
+namespace CS_Proxy.Lists
 {
     /// <summary>
     /// Best Implement these classes once and statically.

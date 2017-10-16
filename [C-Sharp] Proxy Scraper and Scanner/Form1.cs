@@ -16,6 +16,7 @@
 */
 
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -27,7 +28,11 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-using System.IO;
+using CS_Proxy.Proxy;
+using CS_Proxy.Lists;
+using CS_Proxy.Classes.Multithreaded;
+using CS_Proxy.Classes.Singlethreaded;
+
 
 namespace CS_Proxy
 {

@@ -17,12 +17,12 @@
 
 using System;
 using System.Net;
-using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
 
 using xNet;
+using CS_Proxy.Classes.Multithreaded;
 
-namespace CS_Proxy
+namespace CS_Proxy.Proxy
 {
     public enum Anonymity { Transparent, High, Elite, Unknown }; //Transparent, High Elite
 

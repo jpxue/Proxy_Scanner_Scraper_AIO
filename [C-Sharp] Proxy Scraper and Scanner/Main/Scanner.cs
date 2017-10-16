@@ -17,9 +17,12 @@
 
 using System;
 using System.Threading;
-using xNet;
 
-namespace CS_Proxy
+using xNet;
+using CS_Proxy.Proxy;
+using CS_Proxy.Lists;
+
+namespace CS_Proxy.Classes.Multithreaded
 {
     public class Scanner
     {
