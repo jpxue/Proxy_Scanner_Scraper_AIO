@@ -668,13 +668,16 @@ namespace CS_Proxy
             if (statusStrip2.Parent.InvokeRequired)
             {
                 statusStrip2.Parent.Invoke(new MethodInvoker(delegate { scanProgBar.Value = Scanner.Scanned; }));
-                float percent = ((float)Scanner.Scanned * 100.0f) / (float)ProxyMgr.Count;
+                if (Scanner.Scanned != 0)
+                {
+                    float percent = ((float)Scanner.Scanned * 100.0f) / (float)ProxyMgr.Count;
 
-                double seconds = (DateTime.Now - ScanStart).TotalSeconds; //use double coz of DivByZero Exc
-                int leftToScan = ProxyMgr.Count - Scanner.Scanned;
-                double secondsLeft = ((double)leftToScan * seconds) / (double)Scanner.Scanned;
-                TimeSpan ts = TimeSpan.FromSeconds(secondsLeft);
-                statusStrip2.Parent.Invoke(new MethodInvoker(delegate { scanPercentLbl.Text = string.Concat("ETA: ", ts.ToString(@"hh\:mm\:ss"), "  [", percent.ToString("0.00"), "%]"); }));
+                    double seconds = (DateTime.Now - ScanStart).TotalSeconds; //use double coz of DivByZero Exc
+                    int leftToScan = ProxyMgr.Count - Scanner.Scanned;
+                    double secondsLeft = ((double)leftToScan * seconds) / (double)Scanner.Scanned;
+                    TimeSpan ts = TimeSpan.FromSeconds(secondsLeft);
+                    statusStrip2.Parent.Invoke(new MethodInvoker(delegate { scanPercentLbl.Text = string.Concat("ETA: ", ts.ToString(@"hh\:mm\:ss"), "  [", percent.ToString("0.00"), "%]"); }));
+                }
             }
 
             if (Scanner.Threads == 0)
