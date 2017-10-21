@@ -680,7 +680,7 @@ namespace CS_Proxy
                 }
             }
 
-            if (Scanner.Threads == 0)
+            if (Scanner.Threads == 0 && Scanner.Scanned != 0)
             {
                 uiTimer.Stop();
                 scanProxiesBtn.Invoke(new Action(() => scanProxiesBtn.Text = "Scan"));
