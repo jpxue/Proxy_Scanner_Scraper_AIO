@@ -48,12 +48,13 @@ namespace CS_Proxy
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.allBtn = new System.Windows.Forms.Button();
             this.httpBtn = new System.Windows.Forms.Button();
-            this.socksBtn = new System.Windows.Forms.Button();
+            this.socks4Btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.eliteCheck = new System.Windows.Forms.CheckBox();
             this.highCheck = new System.Windows.Forms.CheckBox();
             this.transCheck = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.socks5Btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // allBtn
@@ -61,7 +62,7 @@ namespace CS_Proxy
             this.allBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.allBtn.Location = new System.Drawing.Point(5, 5);
             this.allBtn.Name = "allBtn";
-            this.allBtn.Size = new System.Drawing.Size(85, 25);
+            this.allBtn.Size = new System.Drawing.Size(68, 25);
             this.allBtn.TabIndex = 0;
             this.allBtn.Text = "ALL";
             this.allBtn.UseVisualStyleBackColor = true;
@@ -70,24 +71,24 @@ namespace CS_Proxy
             // httpBtn
             // 
             this.httpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.httpBtn.Location = new System.Drawing.Point(96, 5);
+            this.httpBtn.Location = new System.Drawing.Point(79, 5);
             this.httpBtn.Name = "httpBtn";
-            this.httpBtn.Size = new System.Drawing.Size(85, 25);
+            this.httpBtn.Size = new System.Drawing.Size(68, 25);
             this.httpBtn.TabIndex = 1;
             this.httpBtn.Text = "HTTP";
             this.httpBtn.UseVisualStyleBackColor = true;
             this.httpBtn.Click += new System.EventHandler(this.httpBtn_Click);
             // 
-            // socksBtn
+            // socks4Btn
             // 
-            this.socksBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.socksBtn.Location = new System.Drawing.Point(187, 5);
-            this.socksBtn.Name = "socksBtn";
-            this.socksBtn.Size = new System.Drawing.Size(85, 25);
-            this.socksBtn.TabIndex = 2;
-            this.socksBtn.Text = "SOCKS";
-            this.socksBtn.UseVisualStyleBackColor = true;
-            this.socksBtn.Click += new System.EventHandler(this.button3_Click);
+            this.socks4Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.socks4Btn.Location = new System.Drawing.Point(153, 5);
+            this.socks4Btn.Name = "socks4Btn";
+            this.socks4Btn.Size = new System.Drawing.Size(68, 25);
+            this.socks4Btn.TabIndex = 2;
+            this.socks4Btn.Text = "SOCKS4";
+            this.socks4Btn.UseVisualStyleBackColor = true;
+            this.socks4Btn.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -97,7 +98,7 @@ namespace CS_Proxy
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "ALL = 0   |   HTTP = 0   |   SOCKS = 0";
+            this.label1.Text = "ALL = 0    |    HTTP = 0    |    SOCKS = 0";
             // 
             // eliteCheck
             // 
@@ -116,7 +117,7 @@ namespace CS_Proxy
             this.highCheck.AutoSize = true;
             this.highCheck.Checked = true;
             this.highCheck.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.highCheck.Location = new System.Drawing.Point(85, 77);
+            this.highCheck.Location = new System.Drawing.Point(101, 77);
             this.highCheck.Name = "highCheck";
             this.highCheck.Size = new System.Drawing.Size(69, 17);
             this.highCheck.TabIndex = 5;
@@ -126,7 +127,7 @@ namespace CS_Proxy
             // transCheck
             // 
             this.transCheck.AutoSize = true;
-            this.transCheck.Location = new System.Drawing.Point(160, 77);
+            this.transCheck.Location = new System.Drawing.Point(188, 77);
             this.transCheck.Name = "transCheck";
             this.transCheck.Size = new System.Drawing.Size(104, 17);
             this.transCheck.TabIndex = 6;
@@ -141,19 +142,31 @@ namespace CS_Proxy
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Elite = 0   |   High = 0   |   Transparent = 0";
+            this.label2.Text = "Elite = 0    |    High = 0    |    Transparent = 0";
+            // 
+            // socks5Btn
+            // 
+            this.socks5Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.socks5Btn.Location = new System.Drawing.Point(227, 5);
+            this.socks5Btn.Name = "socks5Btn";
+            this.socks5Btn.Size = new System.Drawing.Size(68, 25);
+            this.socks5Btn.TabIndex = 8;
+            this.socks5Btn.Text = "SOCKS5";
+            this.socks5Btn.UseVisualStyleBackColor = true;
+            this.socks5Btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 106);
+            this.ClientSize = new System.Drawing.Size(304, 106);
+            this.Controls.Add(this.socks5Btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.transCheck);
             this.Controls.Add(this.highCheck);
             this.Controls.Add(this.eliteCheck);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.socksBtn);
+            this.Controls.Add(this.socks4Btn);
             this.Controls.Add(this.httpBtn);
             this.Controls.Add(this.allBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -174,11 +187,12 @@ namespace CS_Proxy
 
         private System.Windows.Forms.Button allBtn;
         private System.Windows.Forms.Button httpBtn;
-        private System.Windows.Forms.Button socksBtn;
+        private System.Windows.Forms.Button socks4Btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox eliteCheck;
         private System.Windows.Forms.CheckBox highCheck;
         private System.Windows.Forms.CheckBox transCheck;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button socks5Btn;
     }
 }

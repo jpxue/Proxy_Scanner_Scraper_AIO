@@ -69,7 +69,7 @@ namespace CS_Proxy.Lists
             Dead.Clear();
         }
 
-        public enum ProxyGeneralType { HTTP, SOCKS, ALL };
+        public enum ProxyGeneralType { HTTP, SOCKS, SOCKS4, SOCKS5, ALL };
         public bool Output(ProxyGeneralType type, bool toClip, string fileLoc, bool elite, bool high, bool trans)
         {
             bool success = true;
@@ -80,10 +80,15 @@ namespace CS_Proxy.Lists
             {
                 if (!Alive[i].isAlive)
                     continue; //not alive
+
                 if (type == ProxyGeneralType.HTTP && Alive[i].Type != ProxyType.Http)
                     continue; //not HTTP
                 if (type == ProxyGeneralType.SOCKS && (Alive[i].Type != ProxyType.Socks4 && Alive[i].Type != ProxyType.Socks4a && Alive[i].Type != ProxyType.Socks5))
                     continue; //not a SOCK
+                if (type == ProxyGeneralType.SOCKS4 && (Alive[i].Type != ProxyType.Socks4 && Alive[i].Type != ProxyType.Socks4a))
+                    continue; //not a SOCK4
+                if (type == ProxyGeneralType.SOCKS5 && Alive[i].Type != ProxyType.Socks5)
+                    continue; //not a SOCK5
 
                 if (!trans && Alive[i].AnonLevel == Anonymity.Transparent)
                     continue;

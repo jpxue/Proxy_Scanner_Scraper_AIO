@@ -173,7 +173,6 @@ namespace CS_Proxy.Classes.Multithreaded
                 catch (ArgumentNullException) { BadURLs++; }
                 catch (WebException) { BadURLs++; }
                 catch (NotSupportedException) { BadURLs++; }
-                //catch (Exception ) { BadURLs++; }
                 finally
                 {
                     //End of URL processing -> next loop

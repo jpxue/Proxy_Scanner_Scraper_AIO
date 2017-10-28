@@ -123,6 +123,7 @@ namespace CS_Proxy
             this.toClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -830,7 +831,7 @@ namespace CS_Proxy
             this.pagesNumUpDown.Size = new System.Drawing.Size(57, 21);
             this.pagesNumUpDown.TabIndex = 2;
             this.pagesNumUpDown.Value = new decimal(new int[] {
-            20,
+            10,
             0,
             0,
             0});
@@ -845,7 +846,8 @@ namespace CS_Proxy
             this.queryRTBox.Size = new System.Drawing.Size(348, 106);
             this.queryRTBox.TabIndex = 0;
             this.queryRTBox.Text = "proxies inbody:{dd}-{mmm}-{yyyy}\nproxies inbody:{dd} {mmm} {yyyy}\nproxies inbody:" +
-    "{d}\nsocks proxies inbody:{d}\nhttp proxies inbody:{d}";
+    "{d}\nsocks proxies inbody:{d}\nhttp proxies inbody:{d}\nproxy inbody:{d}\nfresh prox" +
+    "ies inbody:{d}";
             this.queryRTBox.TextChanged += new System.EventHandler(this.queryRTBox_TextChanged);
             // 
             // label6
@@ -861,6 +863,7 @@ namespace CS_Proxy
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label11);
             this.tabPage4.Controls.Add(this.linkLabel5);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Controls.Add(this.linkLabel4);
@@ -992,6 +995,16 @@ namespace CS_Proxy
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(300, 6);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 15);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Version 1.3";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1112,6 +1125,7 @@ namespace CS_Proxy
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.Label label11;
     }
 }
 

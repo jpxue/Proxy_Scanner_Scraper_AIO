@@ -67,11 +67,11 @@ namespace CS_Proxy
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            label1.Text = string.Concat("ALL = ", Scanner.Alive.ToString(), "   |   HTTP = ", Scanner.Https.ToString(), "   |   SOCKS = ", Scanner.Socks.ToString());
-            label2.Text = string.Concat("L3 = ", Scanner.Elite.ToString(), "   |   L2 = ", Scanner.High.ToString(), "   |   L1 = ", Scanner.Trans.ToString());
+            label1.Text = string.Concat("ALL = ", Scanner.Alive.ToString(), "    |    HTTP = ", Scanner.Https.ToString(), "    |    SOCKS = ", Scanner.Socks.ToString());
+            label2.Text = string.Concat("L3 = ", Scanner.Elite.ToString(), "    |    L2 = ", Scanner.High.ToString(), "    |    L1 = ", Scanner.Trans.ToString());
             allBtn.Enabled = Scanner.Https + Scanner.Socks > 0;
             httpBtn.Enabled = Scanner.Https > 0;
-            socksBtn.Enabled = Scanner.Socks > 0;
+            socks4Btn.Enabled = Scanner.Socks > 0;
         }
 
         private void allBtn_Click(object sender, EventArgs e)
@@ -86,7 +86,12 @@ namespace CS_Proxy
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Output(ProxyManager.ProxyGeneralType.SOCKS);
+            Output(ProxyManager.ProxyGeneralType.SOCKS4);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Output(ProxyManager.ProxyGeneralType.SOCKS5);
         }
     }
 }

@@ -606,7 +606,7 @@ namespace CS_Proxy
         public void AddToListView(MyProxy p)
         {
             //0=Proxy 1=Latency 2=Type 3=Level
-            string type = p.Type == xNet.ProxyType.Http ? "HTTP" : "SOCKS";
+            string type = p.Type.ToString().ToUpper();// == xNet.ProxyType.Http ? "HTTP" : (p.Type == xNet.ProxyType.Socks5 ? "SOCKS5" : "SOCKS4");
             string[] row = { p.ToString(), p.Latency.ToString(),
                 type, p.AnonLevel.ToString() };
             ListViewItem item = new ListViewItem(row);
@@ -646,7 +646,7 @@ namespace CS_Proxy
 
             if (type == "HTTP")
                 item.SubItems[2].ForeColor = Color.Cyan;
-            else if (type == "SOCKS")
+            else //SOCKS
                 item.SubItems[2].ForeColor = Color.Lime;
 
             proxyView.Invoke(new Action(() => proxyView.Items.Add(item)));
@@ -662,7 +662,7 @@ namespace CS_Proxy
             if (Scanner.TerminateThreads)
                 scanProxiesBtn.Invoke(new Action(() => scanProxiesBtn.Text = string.Concat("Threads = ", Scanner.Threads.ToString())));
 
-            aliveLbl.Invoke(new Action(() => aliveLbl.Text = string.Concat("Alive = ", Scanner.Alive.ToString(), "   |   Anonymous = ", (Scanner.High + Scanner.Elite).ToString())));
+            aliveLbl.Invoke(new Action(() => aliveLbl.Text = string.Concat("Alive = ", Scanner.Alive.ToString(), "    |    Anonymous = ", (Scanner.High + Scanner.Elite).ToString())));
             deadLbl.Invoke(new Action(() => deadLbl.Text = string.Concat("Dead = ", Scanner.Dead.ToString())));
 
             if (statusStrip2.Parent.InvokeRequired)

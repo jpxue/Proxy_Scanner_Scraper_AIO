@@ -169,7 +169,7 @@ namespace CS_Proxy.Proxy
             ProxyType[] scanTypes; //http, socks4a, socks5, socks4
             if (ScanHTTP && ScanSOCKS)
             {
-                //Populate order of ProxyTypes which will be scanned in order of likeliness it it's actual Type
+                //Populate order of ProxyTypes which will be scanned in order of likeliness it it's actual type. 
                 if (Port == 80 || Port == 8080 || Port == 3128 || Port == 9999 || Port > 53000) //Typical HTTP Ports
                     scanTypes = new ProxyType[] { ProxyType.Http, ProxyType.Socks4, ProxyType.Socks5, ProxyType.Socks4a };
                 else
