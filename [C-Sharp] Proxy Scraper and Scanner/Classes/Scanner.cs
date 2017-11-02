@@ -106,7 +106,7 @@ namespace CS_Proxy.Classes.Multithreaded
                     else if (proxy.AnonLevel == Anonymity.Elite)
                         Elite++;
 
-                    ProxyMgr.Alive.Add(proxy);
+                    ProxyMgr.AddToAlive(proxy); //has lock in-case of IndexOutOfRange Exc
                     Program.UI.AddToListView(proxy);
                 }
                 else

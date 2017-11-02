@@ -38,6 +38,7 @@ namespace CS_Proxy.Lists
 
 
         private static readonly Object proxiesLock = new Object();
+        private static readonly Object addLock = new Object();
 
         public int Count { get { return Proxies.Count; } }
 
@@ -59,6 +60,14 @@ namespace CS_Proxy.Lists
         public bool Add(string proxy)
         {
             return Proxies.Add(proxy);
+        }
+
+        public void AddToAlive(MyProxy proxy)
+        {
+            lock (addLock) //IndexOutOfRangeException exception
+            {
+                Alive.Add(proxy);
+            }
         }
 
         public void Clear()
