@@ -239,6 +239,7 @@ namespace CS_Proxy.Proxy
                     {
                         Console.WriteLine("{0} ProxyException: {1} on using {2}.", exc.Message, proxy, type.ToString());
                     }
+                    catch (NullReferenceException) { }
                     finally
                     {
                         int timeTaken = Convert.ToInt32((DateTime.Now - start).TotalMilliseconds);
