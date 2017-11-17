@@ -32,7 +32,7 @@ namespace CS_Proxy.Lists
     public class ProxyManager
     {
         private HashSet<string> Proxies = new HashSet<string>(); //added on initialization BY REFERENCE from other hashset
-        private List<string> Unscanned = new List<string>(); //iterative element (not good to iterate in hashset which lacks order)
+        private LinkedList<string> Unscanned = new LinkedList<string>(); //ideal for removing items, specifically first or last item (as is the case here), which only involves a change in pointer
         public List<MyProxy> Alive = new List<MyProxy>();
         public List<MyProxy> Dead = new List<MyProxy>();
 
@@ -49,12 +49,12 @@ namespace CS_Proxy.Lists
             if (proxies!=null)
                 Proxies = proxies; //ref
             if(Proxies.Count>0)
-                Unscanned = Proxies.ToList();
+                Unscanned = new LinkedList<string>(Proxies);
         }
 
         public void Reset()
         {
-            Unscanned = Proxies.ToList();
+            Unscanned = new LinkedList<string>(Proxies);
         }
 
         public bool Add(string proxy)
@@ -156,8 +156,8 @@ namespace CS_Proxy.Lists
                 if (Unscanned.Count == 0)
                     return null;
 
-                MyProxy proxy = new MyProxy(Unscanned[0], false);
-                Unscanned.RemoveAt(0);
+                MyProxy proxy = new MyProxy(Unscanned.First(), false);
+                Unscanned.RemoveFirst();
                 return proxy;
             }
         }
@@ -166,14 +166,14 @@ namespace CS_Proxy.Lists
     public class URLManager
     {
         private List<string> URLs = new List<string>(); //are added externally on import button via List<T>.Add();
-        private List<string> Unscanned = new List<string>();
+        private LinkedList<string> Unscanned = new LinkedList<string>(); //ideal for removing items, specifically first or last item (as is the case here), which only involves a change in pointer
         public static readonly Object urlLock = new Object();
 
         public int Count { get { return URLs.Count; } }
 
         public void Reset()
         {
-            Unscanned = URLs.ToList();
+            Unscanned = new LinkedList<string>(URLs);
         }
 
         public bool Contains(string url)
@@ -203,8 +203,8 @@ namespace CS_Proxy.Lists
                 if (Unscanned.Count == 0)
                     return string.Empty;
 
-                string url = string.Copy(Unscanned[0]);
-                Unscanned.RemoveAt(0);
+                string url = string.Copy(Unscanned.First());
+                Unscanned.RemoveFirst();
                 return url;
             }
         }

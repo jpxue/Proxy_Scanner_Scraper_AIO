@@ -76,6 +76,12 @@ namespace CS_Proxy.Proxy
             Latency = -1;
             Type = ProxyType.Http;
 
+            if (Host.StartsWith("0."))
+            {
+                isMalformed = true;
+                return;
+            }
+
             if (IPv4 == string.Empty)
             {
                 Console.WriteLine("Fetching machine IP Address!");
@@ -205,6 +211,7 @@ namespace CS_Proxy.Proxy
                         start = DateTime.Now;
                         try
                         {
+                            request.Get(Judge);
                             HttpResponse response = request.Get(Judge);
                             string html = response.ToString();
 
@@ -230,6 +237,7 @@ namespace CS_Proxy.Proxy
                         }
                         catch (ArgumentException) { }
                         catch (System.IO.InvalidDataException) { }
+                        catch (NullReferenceException) { } //internal xNet err (request is null; tried if(req==null)break; to no avail
                     }
                     catch (xNet.HttpException exc)
                     {
@@ -239,7 +247,6 @@ namespace CS_Proxy.Proxy
                     {
                         Console.WriteLine("{0} ProxyException: {1} on using {2}.", exc.Message, proxy, type.ToString());
                     }
-                    catch (NullReferenceException) { }
                     finally
                     {
                         int timeTaken = Convert.ToInt32((DateTime.Now - start).TotalMilliseconds);
