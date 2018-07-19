@@ -9,3 +9,6 @@ A program that:
 # How it Works
 [Click To Enlarge]
 ![alt tag](https://raw.githubusercontent.com/jpxue/Proxy_Toolkit_Scan-Scrape/master/how_it_works.png)
+
+# July, 19th Update
+Seems like the first proxy judge 'http://proxyjudge.info/azenv.php' is flagging 99% of good proxies as 'bad', would recommend using other proxy judges by selecting a different one from the dropdown-list/combo-list in the Scanner tab. I do not now if this issue was just a one off (happened today only) but you should always test a small list with 2-3 judges to check out if a particular proxy judge is erroneous.
