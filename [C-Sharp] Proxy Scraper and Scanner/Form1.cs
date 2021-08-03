@@ -55,7 +55,7 @@ namespace CS_Proxy
             proxyView.ContextMenuStrip = contextMenuStrip1;
             ScapePanelUI();
             EnableScanUI();
-            proxyJudgesComboBox.SelectedIndex = 0;
+            proxyJudgesComboBox.SelectedIndex = 1; //judge at Idx = 0 is defunct
             statusLbl.Text = "Status: Idle";
             scanPercentLbl.Text = "";
             queriesLeftLbl.Text = "";
