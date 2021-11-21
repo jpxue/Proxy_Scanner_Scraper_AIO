@@ -14,4 +14,4 @@ A program that:
 Seems like the first proxy judge 'http://proxyjudge.info/azenv.php' is flagging 99% of good proxies as 'bad', would HIGHLY recommend using other proxy judges by selecting a different one from the dropdown-list/combo-list in the Scanner tab. 
 
 ## 2021 Update
-Disclaimer: After 3-4 years, URL Harvester will not work anymore (data is no longer contained solely as HTML in BING) unless re-implemented from scratch (ex: with a headless browser)
+Disclaimer: After 3-4 years, URL Harvester will not work anymore (data is no longer contained solely as HTML in BING) unless re-implemented from scratch (ex: with a headless browser). Scraper should still work if provided with a list of URLs as does the Scanner still work :)
