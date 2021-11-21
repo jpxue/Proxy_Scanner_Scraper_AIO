@@ -10,6 +10,8 @@ A program that:
 [Click To Enlarge]
 ![alt tag](https://raw.githubusercontent.com/jpxue/Proxy_Toolkit_Scan-Scrape/master/how_it_works.png)
 
-# July, 19th Update
+## July, 2020 Update
 Seems like the first proxy judge 'http://proxyjudge.info/azenv.php' is flagging 99% of good proxies as 'bad', would HIGHLY recommend using other proxy judges by selecting a different one from the dropdown-list/combo-list in the Scanner tab. 
-I do not know if this issue was just a one off (happened today only) but you should always test a small list with 2-3 judges (for the best results and to check out if a particular proxy judge is erroneous).
+
+## 2021 Update
+Disclaimer: After 3-4 years, URL Harvester will not work anymore (data is no longer contained solely as HTML in BING) unless re-implemented from scratch (ex: with a headless browser)
